@@ -39,8 +39,8 @@ En resumen, nuestro objetivo con este challenge es implementar una API REST con 
   - Spring Boot Security
  
  - ## EndPoints
-   - Registro de usuario (Autor)
-     ```bash
+## Crear un nuevo usuario(Autor)
+```bash
 [POST] http://localhost:8080/autores
 ```
 
@@ -58,6 +58,65 @@ En resumen, nuestro objetivo con este challenge es implementar una API REST con 
 ```javascript
 Registro exitoso
 ```
+## Mostrar todos los usuarios creados
+```bash
+[POST] http://localhost:8080/autores
+```
+
+<details><summary><b>Output</b></summary>
+<br/>
+```json
+  {
+	"totalPages": 1,
+	"totalElements": 4,
+	"size": 10,
+	"content": [
+		{
+			"id": 1,
+			"nombre": "Enriquez Cabrera",
+			"correo": "otrocambio@gmail"
+		},
+		{
+			"id": 3,
+			"nombre": "Luis Cabrera",
+			"correo": "lucho1@gmail"
+		},
+		{
+			"id": 4,
+			"nombre": "Mario Cabrera",
+			"correo": "mario@gmail"
+		},
+		{
+			"id": 7,
+			"nombre": "Saul Cabrera",
+			"correo": "saul@gmail"
+		}
+	],
+	"number": 0,
+	"sort": {
+		"empty": true,
+		"sorted": false,
+		"unsorted": true
+	},
+	"first": true,
+	"last": true,
+	"numberOfElements": 4,
+	"pageable": {
+		"pageNumber": 0,
+		"pageSize": 10,
+		"sort": {
+			"empty": true,
+			"sorted": false,
+			"unsorted": true
+		},
+		"offset": 0,
+		"paged": true,
+		"unpaged": false
+	},
+	"empty": false
+}
+```
+
 
 </details>
  
